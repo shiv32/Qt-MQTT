@@ -1,0 +1,64 @@
+
+
+
+                           ====================== Qt MQTT Setup =========================
+
+
+========================================
+Install mosquitto mqtt broker client in host machine -->
+
+sudo apt install gcc mosquitto mosquitto-clients libmosquitto-dev
+
+========================================
+Qt :->
+
+1. Clone the MQTT Official Repository and change the branch for the exact Building Kit you’re using in your project (git checkout 5.x.x)
+
+        git clone git://code.qt.io/qt/qtmqtt.git
+        git checkout 5.13.2
+
+2. Check if the version of the repository that you've cloned is the same as the qmake kit that you are using.
+
+        cd qmqtt
+
+        git branch -v
+
+        /home/shiv/Qt/5.13.2/gcc_64/bin/qmake -v
+
+3. Compiling/Installing MQTT on Linux
+
+     cd qmqtt
+
+    /home/shiv/Qt/5.13.2/gcc_64/bin/qmake -r
+    make
+    sudo make install
+
+--------------------------------------------
+
+-------------------------------------
+Start mosquitto broker in host before start publiser/subscriber app by below command -->
+
+$mosquitto -v
+
+-------------- Sample App ----------------------
+
+publisher/subscriber app for test, you will get in cloned git repo
+
+git clone git://code.qt.io/qt/qtmqtt.git
+
+------------------------------------------------------
+
+
+----------------------------------------------------------------------------------
+Ref:
+https://mosquitto.org/
+https://medium.com/@mateustoin/how-to-use-mqtt-module-on-qt-b9967f0f1c98
+https://code.qt.io/cgit/qt/qtmqtt.git/
+http://www.steves-internet-guide.com/mqtt-retained-messages-example/
+https://assetwolf.com/learn/mqtt-qos-understanding-quality-of-service
+https://devopedia.org/images/article/10/4215.1529256993.jpg
+-----------------------------------------------------------------------------------
+
+
+
+
