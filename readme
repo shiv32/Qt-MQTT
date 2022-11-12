@@ -23,13 +23,13 @@ Qt :->
 
         git branch -v
 
-        /home/shiv/Qt/5.13.2/gcc_64/bin/qmake -v
+        /home/xyz/Qt/5.13.2/gcc_64/bin/qmake -v
 
 3. Compiling/Installing MQTT on Linux
 
      cd qmqtt
 
-    /home/shiv/Qt/5.13.2/gcc_64/bin/qmake -r
+    /home/xyz/Qt/5.13.2/gcc_64/bin/qmake -r
     make
     sudo make install
 
