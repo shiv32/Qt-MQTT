@@ -19,7 +19,7 @@ Qt :->
 
 2. Check if the version of the repository that you've cloned is the same as the qmake kit that you are using.
 
-        cd qmqtt
+        cd qtmqtt
 
         git branch -v
 
@@ -27,9 +27,14 @@ Qt :->
 
 3. Compiling/Installing MQTT on Linux
 
-     cd qmqtt
+     cd qtmqtt
 
-    /home/xyz/Qt/5.13.2/gcc_64/bin/qmake -r
+    open the project qtmqtt.pro in qt
+    right click on project
+    select clean
+           run qmake
+
+   in terminal -->
     make
     sudo make install
 
@@ -38,7 +43,8 @@ Qt :->
 -------------------------------------
 Start mosquitto broker in host before start publiser/subscriber app by below command -->
 
-$mosquitto -v
+$ pkill mosquitto
+$ mosquitto -v
 
 -------------- Sample App ----------------------
 
